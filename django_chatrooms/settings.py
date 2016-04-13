@@ -107,6 +107,16 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 
+CHANNEL_LAYERS = {
+    "default": {
+        "BACKEND": "asgi_redis.RedisChannelLayer",
+        "CONFIG": {
+            "hosts": [("redis", 6379)],
+        },
+        "ROUTING": "chatrooms.routing.channel_routing",
+    },
+}
+
 # Internationalization
 # https://docs.djangoproject.com/en/1.9/topics/i18n/
 
