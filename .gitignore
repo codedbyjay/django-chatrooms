@@ -63,3 +63,4 @@ design/
 id_rsa*
 local_settings*.py
 db.sqlite*
+node_modules/
