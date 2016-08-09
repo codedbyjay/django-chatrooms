@@ -39,10 +39,12 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'django_extensions',
+    'rest_framework',
 
     'crispy_forms',
     'channels',
     'chatrooms',
+    'docs',
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -136,3 +138,5 @@ CRISPY_TEMPLATE_PACK = 'bootstrap3'
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
 STATIC_URL = '/static/'
+
+DOCS_ROOT = os.path.join(BASE_DIR, 'docs/_build/html')
