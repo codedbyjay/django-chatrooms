@@ -1,14 +1,14 @@
 {% extends "chatrooms/base.html" %}
 {% block container %}
-<div class="sidebar">
+<div class="col-sm-3 col-md-2 sidebar">
+    {% if not user.is_authenticated %}
+        <li><a href="/login/">Login</a></li>
+        <li><a href="/register/">Register</a></li>
+    {% endif %}
 </div>
-<div class="chat">
-    <div class="chat-messages"></div>
-    <div class="message">
-        <textarea name="" id="" rows="4" class="new-message"></textarea>
-        <button class="send-message">Send Messge</button>
-    </div>
+<div class="col-sm-9 col-md-11" id="container">
 </div>
 
+<!-- https://www.behance.net/gallery/25816131/UI-UX-Design-2014-2015?utm_medium=email&utm_source=transactional&utm_campaign=project-published -->
 {% endblock container %}
 
