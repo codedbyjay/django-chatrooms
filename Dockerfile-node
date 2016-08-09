@@ -1,0 +1,5 @@
+FROM node:latest
+RUN mkdir /code
+ADD . /code
+WORKDIR /code/chatrooms/static/js/
+RUN npm install
