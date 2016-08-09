@@ -5,3 +5,4 @@ WORKDIR /code
 ADD . /code
 ADD requirements.txt /code/
 RUN pip install -r requirements.txt
+RUN apt-get update --fix-missing && apt-get install make
