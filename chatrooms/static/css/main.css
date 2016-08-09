@@ -26,24 +26,15 @@ textarea {
     background-color: #273238;
 }
 
-.navbar-default {
+.main-menu {
     background-color: #1976D3;
-    border-color: transparent;
-    border-radius: 0px;
+    height: 70px;
+    display: flex;
 }
 
-.navbar-default .navbar-brand {
-    color: white;
-}
 
-.container-wrapper {
-    margin-top: -20px;
+div.brand {
+    font-size: 22px;
+    color:white;
+    align-self: center;
 }
-
-#navbar-header {
-    margin-left: -16px;
-    width: 250px;
-    background-color: #273238;
-    padding-left: 20px;
-}
-
