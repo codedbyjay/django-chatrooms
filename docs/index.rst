@@ -6,17 +6,14 @@
 Welcome to Django Chatrooms's documentation!
 ============================================
 
-Contents:
+Todo:
+-----
+- Get alternative for JSX compilation using Gulp or whatever
+- Sort out imports for react-router
 
 .. toctree::
    :maxdepth: 2
 
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+   howto/install
+   reference/api_reference
 
