@@ -2,11 +2,16 @@ asgi_redis==0.10.0
 channels==0.11.0
 daphne==0.10.3
 Django==1.9
+django-autoslug==1.9.3
+djangorestframework==3.3.3
 django-crispy-forms==1.5.0
 django-debug-toolbar==1.4
 django-docs==0.1.2
 django-extensions==1.6.1
 django-registration==2.0.4
+django-docs==0.1.2
 redis==2.10.3
 six==1.9.0
 Sphinx==1.4
+sphinx-rtd-theme==0.1.9
+watchdog==0.8.3
