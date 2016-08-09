@@ -14,3 +14,17 @@ services:
             - redis
     redis:
         image: redis:latest
+    node:
+        build:
+            context: .
+            dockerfile: Dockerfile-node
+        command: node_modules/gulp/bin/gulp.js
+        volumes:
+            - .:/code            
+    docs:
+        build: .
+        command: python /code/docs/watchdocs.py
+        depends_on:
+            - web
+        volumes_from:
+            - web
